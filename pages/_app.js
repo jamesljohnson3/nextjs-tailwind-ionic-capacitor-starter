@@ -37,13 +37,20 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         ></meta>
-      </Head>
+      </Head>   <SignedIn>
       <Component {...pageProps} />
       <Script
         type="module"
         src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
       ></Script>
-      <Script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></Script>
+      <Script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></Script> </SignedIn>
+    <SignedOut>
+      {publicPages.includes(pathname) ? (
+        <Component {...pageProps} />
+      ) : (
+        <RedirectToSignIn />
+      )}
+    </SignedOut>
       </ClerkProvider> </>
   );
 }
