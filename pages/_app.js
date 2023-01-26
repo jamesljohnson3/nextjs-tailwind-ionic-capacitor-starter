@@ -27,7 +27,6 @@ import '../styles/variables.css';
 
 function MyApp({ Component, pageProps }) {
 
-  const publicPages = ["/tabs/feed",];
 
 
   return (
@@ -45,11 +44,9 @@ function MyApp({ Component, pageProps }) {
       ></Script>
       <Script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></Script> </SignedIn>
     <SignedOut>
-      {publicPages.includes(pathname) ? (
-        <Component {...pageProps} />
-      ) : (
+    
         <RedirectToSignIn />
-      )}
+  
     </SignedOut>
       </ClerkProvider> </>
   );
