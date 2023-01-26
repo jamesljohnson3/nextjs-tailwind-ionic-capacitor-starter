@@ -61,8 +61,8 @@ const Feed = () => {
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Feed</IonTitle>
-          </IonToolbar><UserButton />
-        </IonHeader>
+          </IonToolbar>
+        </IonHeader><UserButton />
         <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
         {homeItems.map((i, index) => (
           <FeedCard {...i} key={index} />
