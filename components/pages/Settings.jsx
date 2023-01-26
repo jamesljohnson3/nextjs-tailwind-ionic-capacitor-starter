@@ -2,7 +2,7 @@ import React from 'react';
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonItem, IonLabel, IonList, IonThumbnail } from '@ionic/react';
 
 
-function Example() {
+const Settings = () => {
   return (
     <IonCard>
       <IonCardHeader>
@@ -43,4 +43,4 @@ function Example() {
     </IonCard>
   );
 }
-export default Example;
+export default Settings;
