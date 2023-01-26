@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Card from '../ui/Card';
+import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
+import "@knocklabs/react-notification-feed/dist/index.css";
 
 import {
   IonPage,
@@ -17,6 +19,10 @@ import { useState } from 'react';
 import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
 import Store from '../../store';
+import {init} from 'commandbar';
+if (typeof window !== "undefined") {
+  init("c2025881");
+}
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
