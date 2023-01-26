@@ -1,47 +1,47 @@
-import {
-  IonPage,
-  IonHeader,
-  IonItem,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-  IonList,
-  IonToggle,
-  IonLabel,
-} from '@ionic/react';
+import React from 'react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonItem, IonLabel, IonList, IonThumbnail } from '@ionic/react';
 
-import Store from '../../store';
-import * as selectors from '../../store/selectors';
-import { setSettings } from '../../store/actions';
+import './main.css';
 
-const Settings = () => {
-  const settings = Store.useState(selectors.getSettings);
-
+function Example() {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Settings</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
+    <IonCard>
+      <IonCardHeader>
+        <IonCardTitle>Card Title</IonCardTitle>
+        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+      </IonCardHeader>
+      <IonCardContent>
         <IonList>
           <IonItem>
-            <IonLabel>Enable Notifications</IonLabel>
-            <IonToggle
-              checked={settings.enableNotifications}
-              onIonChange={e => {
-                setSettings({
-                  ...settings,
-                  enableNotifications: e.target.checked,
-                });
-              }}
-            />
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+
+          <IonItem>
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+
+          <IonItem>
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+
+          <IonItem lines="none">
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
           </IonItem>
         </IonList>
-      </IonContent>
-    </IonPage>
+      </IonCardContent>
+    </IonCard>
   );
-};
-
-export default Settings;
+}
+export default Example;
