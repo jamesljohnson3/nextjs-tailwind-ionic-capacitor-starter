@@ -27,7 +27,7 @@ import '../styles/variables.css';
 
 function MyApp({ Component, pageProps }) {
 
-  const publicPages = ["/",];
+  const publicPages = ["/tabs/feed",];
 
 
   return (
