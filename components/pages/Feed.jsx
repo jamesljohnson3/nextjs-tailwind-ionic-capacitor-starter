@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import Image from 'next/image';
 import Card from '../ui/Card';
 
@@ -18,10 +17,7 @@ import { useState } from 'react';
 import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
 import Store from '../../store';
-import {init} from 'commandbar';
-if (typeof window !== "undefined") {
-  init("c2025881");
-}
+
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
     <div className="h-32 w-full relative">
@@ -45,26 +41,13 @@ const Feed = () => {
   const homeItems = Store.useState(getHomeItems);
   const [showNotifications, setShowNotifications] = useState(false);
 
-  const { id, username, primaryEmailAddress, publicMetadata, privateMetadata,	 profileImageUrl, fullName, firstName } = useUser();
-  const loggedInUserId = {primaryEmailAddress}; // example
-  window.CommandBar.boot(loggedInUserId), { formFactor: { type: 'inline', rootElement: 'commandbar-inline-root' } };
-  window.CommandBar.setFormFactor({ type: 'inline', rootElement: 'commandbar-inline-root' });
-
-  window.CommandBar.addMetadata("username", {username})
-  window.CommandBar.addMetadata("profileImageUrl", {profileImageUrl})
-  window.CommandBar.addMetadata("firstName", {firstName})
-  window.CommandBar.addMetadata("publicMetadata", {publicMetadata})
-  const getFeed = () => fetch(`https://main-bvxea6i-zaz5zyrpktiw2.us-2.platformsh.site/items/${username}`);
-window.CommandBar.addRecords("feed", getFeed);
-
-
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Feed</IonTitle>
           <IonButtons slot="start">
-            <IonMenuButton /><div id="commandbar-inline-root" style={{ width: 385 }}><input type="text" class="inline-bar-placeholder" /></div>
+            <IonMenuButton />
           </IonButtons>
           <IonButtons slot="end">
             <IonButton onClick={() => setShowNotifications(true)}>
