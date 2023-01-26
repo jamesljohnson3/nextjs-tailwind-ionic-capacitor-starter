@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Card from '../ui/Card';
 import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
-import "@knocklabs/react-notification-feed/dist/index.css";
 import React, { useRef, useState } from 'react'
 
 import {
