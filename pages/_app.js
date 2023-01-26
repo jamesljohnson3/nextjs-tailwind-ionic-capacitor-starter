@@ -30,13 +30,13 @@ function MyApp({ Component, pageProps }) {
 
 
   return (
-    <> <ClerkProvider>
+    <> <ClerkProvider> <SignedIn>
       <Head>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         ></meta>
-      </Head>   <SignedIn>
+      </Head>  
       <Component {...pageProps} />
       <Script
         type="module"
