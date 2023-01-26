@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import { setupIonicReact } from '@ionic/react';
+import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut, useClerk } from "@clerk/nextjs";
 
 import 'tailwindcss/tailwind.css';
 /* Core CSS required for Ionic components to work properly */
@@ -22,9 +23,15 @@ import '@ionic/react/css/display.css';
 import '../styles/global.css';
 import '../styles/variables.css';
 
+
+
 function MyApp({ Component, pageProps }) {
+
+  const publicPages = ["/",];
+
+
   return (
-    <>
+    <> <ClerkProvider>
       <Head>
         <meta
           name="viewport"
@@ -37,7 +44,7 @@ function MyApp({ Component, pageProps }) {
         src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
       ></Script>
       <Script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></Script>
-    </>
+      </ClerkProvider> </>
   );
 }
 
