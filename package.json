@@ -19,7 +19,7 @@
     "@clerk/nextjs": "^2.0.0",
     "@ionic/react": "^6.2.9",
     "@ionic/react-router": "^6.2.9",
-    "@knocklabs/react-notification-feed": "^0.8.2",
+    "@knocklabs/react-notification-feed": "^0.6.1",
     "autoprefixer": "^10.2.6",
     "classnames": "^2.2.6",
     "next": "^12.2.0",

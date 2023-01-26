@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Card from '../ui/Card';
+import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
+import React, { useRef, useState } from 'react'
 
 import {
   IonPage,
@@ -13,10 +15,10 @@ import {
   IonMenuButton,
 } from '@ionic/react';
 import Notifications from './Notifications';
-import { useState } from 'react';
 import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
 import Store from '../../store';
+
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
@@ -40,6 +42,13 @@ const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
 const Feed = () => {
   const homeItems = Store.useState(getHomeItems);
   const [showNotifications, setShowNotifications] = useState(false);
+
+  const { id, username, primaryEmailAddress, publicMetadata, privateMetadata,	 profileImageUrl, fullName, firstName } = useUser();
+  const loggedInUserId = {primaryEmailAddress}; // example
+
+
+const notifButtonRef = useRef(null);
+const [isVisible, setIsVisible] = useState(false);
 
   return (
     <IonPage>
