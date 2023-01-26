@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import Image from 'next/image';
 import Card from '../ui/Card';
 
@@ -63,7 +64,7 @@ window.CommandBar.addRecords("feed", getFeed);
         <IonToolbar>
           <IonTitle>Feed</IonTitle>
           <IonButtons slot="start">
-            <IonMenuButton />
+            <IonMenuButton /><div id="commandbar-inline-root" style={{ width: 385 }}><input type="text" class="inline-bar-placeholder" /></div>
           </IonButtons>
           <IonButtons slot="end">
             <IonButton onClick={() => setShowNotifications(true)}>
