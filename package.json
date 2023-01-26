@@ -16,6 +16,7 @@
     "@capacitor/core": "^4.0.0",
     "@capacitor/ios": "^4.0.0",
     "@capacitor/status-bar": "^4.0.0",
+    "@clerk/nextjs": "^4.7.9",
     "@ionic/react": "^6.2.9",
     "@ionic/react-router": "^6.2.9",
     "autoprefixer": "^10.2.6",
