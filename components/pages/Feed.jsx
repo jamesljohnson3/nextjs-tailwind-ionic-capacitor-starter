@@ -17,6 +17,7 @@ import { useState } from 'react';
 import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
 import Store from '../../store';
+import { UserButton,  useUser} from "@clerk/clerk-react";
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
