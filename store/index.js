@@ -17,8 +17,8 @@ const Store = new PullStateStore({
 
 const fetchData = async () => {
   try {
-    const homeItemsResponse = await axios.get('https://main-bvxea6i-zaz5zyrpktiw2.us-2.platformsh.site/items/feedv1');
-    const listsResponse = await axios.get('https://connect.unlimitednow.site/lists');
+    const homeItemsResponse = await axios.get('https://connect.unlimitednow.site/homeItems');
+    const listsResponse = await axios.get('https://ffo4vnt2.directus.app/items/notifyv1');
     const notificationsResponse = await axios.get('https://connect.unlimitednow.site/notifications');
     Store.update(s => {
       s.homeItems = JSON.stringify(homeItemsResponse.data);
