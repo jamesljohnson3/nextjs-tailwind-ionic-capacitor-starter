@@ -51,9 +51,7 @@ const Feed = () => {
             <IonMenuButton />
           </IonButtons>
           <IonButtons slot="end">
-          <a href='https://studio.unlimitpotential.com/'> <IonButton onClick={() => setShowNotifications(true)}>
-              <IonIcon icon={notificationsOutline} />
-            </IonButton></a> <UserButton /> 
+          <UserButton /> 
           </IonButtons>
         </IonToolbar>
       </IonHeader>
