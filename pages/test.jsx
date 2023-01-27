@@ -1,4 +1,4 @@
-import Tease from '../components/cosmic';
+import Tease from '../components/pages/cosmic';
 
 const SignUpPage = () => <><Tease /></>;
 
