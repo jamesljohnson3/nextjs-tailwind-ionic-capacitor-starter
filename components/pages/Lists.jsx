@@ -35,13 +35,13 @@ const Lists = () => {
     <IonPage>
       <IonHeader translucent={true}>
         <IonToolbar>
-          <IonTitle>Lists</IonTitle>
+          <IonTitle>Earn More</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen={true}>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Lists</IonTitle>
+            <IonTitle size="large">Earn More</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonList>
