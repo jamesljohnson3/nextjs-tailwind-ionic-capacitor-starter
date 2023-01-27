@@ -43,20 +43,20 @@ export const notifications = [
 // Some fake lists
 export const lists = [
   {
-    name: 'Groceries',
+    name: '1. Setting up payments',
     id: 'groceries',
-    items: [{ name: 'Apples' }, { name: 'Bananas' }, { name: 'Milk' }, { name: 'Ice Cream' }],
+    items: [{ name: 'Stripe' }, { name: 'Square' }, { name: 'PayPal' }, { name: 'CashApp ' }],
   },
   {
-    name: 'Hardware Store',
+    name: 'Growing your lists',
     id: 'hardware',
     items: [
-      { name: 'Circular Saw' },
-      { name: 'Tack Cloth' },
-      { name: 'Drywall' },
-      { name: 'Router' },
+      { name: 'Mailchimp' },
+      { name: 'Klaviyo' },
+      { name: 'Campaign Monitor' },
+      { name: 'Sendgrid' },
     ],
   },
-  { name: 'Work', id: 'work', items: [{ name: 'TPS Report' }, { name: 'Set up email' }] },
-  { name: 'Reminders', id: 'reminders' },
+  { name: 'Managing online appearance', id: 'work', items: [{ name: 'How to part A' }, { name: 'How to Part b' }] },
+  { name: 'Finding new customers', id: 'reminders' },
 ];
