@@ -12,6 +12,8 @@ import {
   IonContent,
   IonMenuButton,
 } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonItem, IonLabel, IonList, IonThumbnail } from '@ionic/react';
+
 import Notifications from './Notifications';
 import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
@@ -65,6 +67,43 @@ const Feed = () => {
         {homeItems.map((i, index) => (
           <FeedCard {...i} key={index} href='https://unlimitpotential.com/my-profile'/>
         ))}
+         <IonCard>
+      <IonCardHeader>
+        <IonCardTitle>Card Title</IonCardTitle>
+        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+      </IonCardHeader>
+      <IonCardContent>
+        <IonList>
+          <IonItem>
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+
+          <IonItem>
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+
+          <IonItem>
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+
+          <IonItem lines="none">
+            <IonThumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </IonThumbnail>
+            <IonLabel>Item</IonLabel>
+          </IonItem>
+        </IonList>
+      </IonCardContent>
+    </IonCard>
       </IonContent>
     </IonPage>
   );
