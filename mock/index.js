@@ -43,7 +43,7 @@ export const notifications = [
 // Some fake lists
 export const lists = [
   {
-    name: '1. Setting up payments',
+    name: '1. Open merchant account',
     id: 'groceries',
     items: [{ name: 'Stripe' }, { name: 'Square' }, { name: 'PayPal' }, { name: 'CashApp ' }],
   },
