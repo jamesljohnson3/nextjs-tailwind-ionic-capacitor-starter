@@ -110,10 +110,10 @@ const Feed = () => {
           <IonList>
             <IonItem button={true} detail={false}>
               Add Assets
-            </IonItem>
+            </IonItem> <a href='https://lillie-ai-betav1.unlimitpotential.com/'>
             <IonItem button={true} detail={false}>
-              Predictins
-            </IonItem>
+              Predictions
+            </IonItem> </a>
             <IonItem button={true} id="nested-trigger">
               More options...
             </IonItem>
