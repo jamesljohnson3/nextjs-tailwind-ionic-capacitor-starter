@@ -77,28 +77,28 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.05_AM_i7dtzd.png" />
             </IonThumbnail>
-            <a href='https://studio.unlimitpotential.com/'> <IonLabel>Switch Mod</IonLabel></a><p>Here's a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://studio.unlimitpotential.com/'> <IonLabel>Switch Mod</IonLabel></a><p>Heres a small text description for the content. Nothing more, nothing less.</p>
           </IonItem>
 
           <IonItem>
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.20_AM_zltc7j.png" />
             </IonThumbnail>
-            <a href='https://connect.unlimitpotential.com/'>  <IonLabel>Recent Posts</IonLabel></a><p>Here's a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://connect.unlimitpotential.com/'>  <IonLabel>Recent Posts</IonLabel></a><p>Heres a small text description for the content. Nothing more, nothing less.</p>
           </IonItem>
 
           <IonItem>
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.31.57_AM_gnw5wi.png" />
             </IonThumbnail>
-            <a href='https://accounts.unlimitpotential.com/me'>  <IonLabel>Command Center</IonLabel></a><p>Here's a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://accounts.unlimitpotential.com/me'>  <IonLabel>Command Center</IonLabel></a><p>Heres a small text description for the content. Nothing more, nothing less.</p>
           </IonItem>
 
           <IonItem lines="none">
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.11_AM_f7flvc.png" />
             </IonThumbnail>
-            <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>  <IonLabel>Begin Challenge</IonLabel></a><p>Here's a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>  <IonLabel>Begin Challenge</IonLabel></a><p>Heres a small text description for the content. Nothing more, nothing less.</p>
           </IonItem>
         </IonList>
       </IonCardContent>
