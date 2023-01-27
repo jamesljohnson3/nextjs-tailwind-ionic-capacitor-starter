@@ -11,6 +11,7 @@ import {
   IonMenuButton,
 } from '@ionic/react';
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonLabel, IonThumbnail } from '@ionic/react';
+import { IonCol, IonGrid, IonRow } from '@ionic/react';
 
 import Notifications from './Notifications';
 import { notificationsOutline } from 'ionicons/icons';
@@ -62,6 +63,9 @@ const Feed = () => {
             <IonTitle size="large">Quick Start</IonTitle>
           </IonToolbar>
        </IonHeader>
+       <IonGrid>
+        <IonRow>
+
         <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
         {homeItems.map((i, index) => (
           <FeedCard {...i} key={index}/>
@@ -130,6 +134,8 @@ const Feed = () => {
           </IonList>
         </IonContent>
       </IonPopover>
+      </IonRow>
+      </IonGrid>
       </IonContent>
     </IonPage>
   );
