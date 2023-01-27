@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import Image from 'next/image';
 import Card from '../ui/Card';
 import React, { useRef, useState } from 'react'
@@ -21,7 +20,6 @@ import { UserButton,  useUser} from "@clerk/clerk-react";
 import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
 import "@knocklabs/react-notification-feed/dist/index.css";
 
-const { id, username, primaryEmailAddress, publicMetadata, privateMetadata,	 profileImageUrl, fullName, firstName } = useUser();
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
     <div className="h-32 w-full relative">
