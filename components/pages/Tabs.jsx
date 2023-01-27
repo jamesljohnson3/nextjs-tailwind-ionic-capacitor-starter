@@ -25,11 +25,11 @@ const Tabs = () => {
         </IonTabButton>
         <IonTabButton tab="tab2" href="/tabs/lists">
           <IonIcon icon={list} />
-          <IonLabel>Supercharged</IonLabel>
+          <IonLabel>Earn More</IonLabel>
         </IonTabButton>
         <IonTabButton tab="tab3" href="/tabs/settings">
           <IonIcon icon={cog} />
-          <IonLabel>Earn More</IonLabel>
+          <IonLabel>Supercharged</IonLabel>
         </IonTabButton>
       </IonTabBar>
     </IonTabs>
