@@ -39,7 +39,7 @@ const Settings = () => {
             />
           </IonItem>
           <IonItem>
-            <IonLabel>Lillie AI</IonLabel>
+            <IonLabel>Lillie A.I.</IonLabel>
             <IonToggle
               checked={settings.enableNotifications}
               onIonChange={e => {
