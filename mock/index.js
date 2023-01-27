@@ -43,12 +43,12 @@ export const notifications = [
 // Some fake lists
 export const lists = [
   {
-    name: ' Open merchant account',
+    name: ' 💰 Open merchant account',
     id: 'groceries',
     items: [{ name: 'Stripe' }, { name: 'Square' }, { name: 'PayPal' }, { name: 'CashApp ' }],
   },
   {
-    name: 'Growing your lists',
+    name: '🧑‍🤝‍🧑 Growing your lists',
     id: 'hardware',
     items: [
       { name: 'Mailchimp' },
@@ -57,6 +57,6 @@ export const lists = [
       { name: 'Sendgrid' },
     ],
   },
-  { name: 'Managing online appearance', id: 'work', items: [{ name: 'How to part A' }, { name: 'How to Part b' }] },
-  { name: 'Finding new customers', id: 'reminders' },
+  { name: '🥰 Managing online appearance', id: 'work', items: [{ name: 'How to part A' }, { name: 'How to Part b' }] },
+  { name: '👋 Finding new customers', id: 'reminders' },
 ];
