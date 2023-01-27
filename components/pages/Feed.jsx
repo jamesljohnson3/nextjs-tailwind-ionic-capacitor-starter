@@ -19,7 +19,7 @@ import Store from '../../store';
 import { UserButton,  useUser} from "@clerk/clerk-react";
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
-  <Card className="my-4 mx-auto">
+  <><a href='https://studio.unlimitpotential.com/'><Card className="my-4 mx-auto">
     <div className="h-32 w-full relative">
       <img className="rounded-t-xl object-cover min-w-full min-h-full max-w-full max-h-full" src={image} alt="" />
     </div>
@@ -34,7 +34,7 @@ const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
         <h3 className="text-gray-500 dark:text-gray-200 m-l-8 text-sm font-medium">{author}</h3>
       </div>
     </div>
-  </Card>
+  </Card></a> </>
 );
 
 const Feed = () => {
