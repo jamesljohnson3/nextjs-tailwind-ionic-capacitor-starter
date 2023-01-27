@@ -10,7 +10,7 @@ export const homeItems = [
     type: 'Create',
     text: 'Distribute Ads',
     author: 'Unlimited Now',
-    authorAvatar: '/img/max.jpg',
+    authorAvatar: '/img/logo.png',
     image: images[0],
   }
 ];
