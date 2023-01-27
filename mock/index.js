@@ -12,14 +12,7 @@ export const homeItems = [
     author: 'Create Unlimited Now',
     authorAvatar: '/img/logo.png',
     image: images[0],
-  }, {
-    title: 'Receive Exclusive Rewards',
-    type: 'Get started now!',
-    text: 'No card required!',
-    author: 'Create Unlimited Now',
-    authorAvatar: '/img/logo.png',
-    image: images[0],
-  }
+  },
 ];
 
 export const notifications = [
