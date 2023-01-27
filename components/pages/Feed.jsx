@@ -42,8 +42,7 @@ const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
 const Feed = () => {
   const homeItems = Store.useState(getHomeItems);
   const [showNotifications, setShowNotifications] = useState(false);
-  const notifButtonRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+
   
   return (
     <IonPage>
@@ -56,21 +55,7 @@ const Feed = () => {
           <IonButtons slot="end">
             <IonButton onClick={() => setShowNotifications(true)}>
               <IonIcon icon={notificationsOutline} />
-            </IonButton> <UserButton /> <KnockFeedProvider
-          userId={primaryEmailAddress.toString()}
-          apiKey={process.env.NEXT_PUBLIC_KNOCK_PUBLIC_API_KEY}
-          feedId={process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID}
-        ><>
-        <NotificationIconButton
-          ref={notifButtonRef}
-          onClick={(e) => setIsVisible(!isVisible)}
-        />
-        <NotificationFeedPopover
-          buttonRef={notifButtonRef}
-          isVisible={isVisible}
-          onClose={() => setIsVisible(false)}
-        />
-      </></KnockFeedProvider>  
+            </IonButton> <UserButton /> 
           </IonButtons>
         </IonToolbar>
       </IonHeader>
