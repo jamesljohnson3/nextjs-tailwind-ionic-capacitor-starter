@@ -98,7 +98,7 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.11_AM_f7flvc.png" />
             </IonThumbnail>
-            <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>  <IonLabel>Start Challenge</IonLabel></a><p>Here's a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>  <IonLabel>Begin Challenge</IonLabel></a><p>Here's a small text description for the content. Nothing more, nothing less.</p>
           </IonItem>
         </IonList>
       </IonCardContent>
@@ -108,10 +108,10 @@ const Feed = () => {
         <IonContent>
           <IonList>
             <IonItem button={true} detail={false}>
-              Option 1
+              Add Assets
             </IonItem>
             <IonItem button={true} detail={false}>
-              Option 2
+              Predictins
             </IonItem>
             <IonItem button={true} id="nested-trigger">
               More options...
@@ -121,7 +121,7 @@ const Feed = () => {
               <IonContent>
                 <IonList>
                   <IonItem button={true} detail={false}>
-                    Nested option
+                    Create Fyler
                   </IonItem>
                 </IonList>
               </IonContent>
