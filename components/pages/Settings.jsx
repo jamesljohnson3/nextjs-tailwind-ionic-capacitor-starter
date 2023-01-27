@@ -63,7 +63,7 @@ const Settings = () => {
             />
           </IonItem>
           <IonItem>
-            <IonLabel>Payment Gateway</IonLabel>
+            <IonLabel>Send/Receive Payments</IonLabel>
             <IonToggle
               checked={settings.enableNotifications}
               onIonChange={e => {
