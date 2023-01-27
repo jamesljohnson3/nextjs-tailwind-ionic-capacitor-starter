@@ -122,7 +122,7 @@ const Feed = () => {
               <IonContent>
                 <IonList>
                   <IonItem button={true} detail={false}>
-                    Create Fyler
+                    Create Flyer
                   </IonItem>
                 </IonList>
               </IonContent>
