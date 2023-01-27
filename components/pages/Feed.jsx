@@ -65,7 +65,7 @@ const Feed = () => {
        </IonHeader>
         <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
         {homeItems.map((i, index) => (
-          <FeedCard {...i} key={index} href='https://unlimitpotential.com/my-profile'/>
+          <FeedCard {...i} key={index}/>
         ))}
          <IonCard>
       <IonCardHeader>
