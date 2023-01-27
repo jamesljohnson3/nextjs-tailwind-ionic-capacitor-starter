@@ -6,7 +6,7 @@ export const images = [
 
 export const homeItems = [
   {
-    title: 'Exploring Maui',
+    title: 'Receive Exclusive Rewards',
     type: 'Create',
     text: 'Distribute Ads',
     author: 'Max Lynch',
