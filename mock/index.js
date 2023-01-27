@@ -9,7 +9,7 @@ export const homeItems = [
     title: 'Receive Exclusive Rewards',
     type: 'Create',
     text: 'Distribute Ads',
-    author: 'Max Lynch',
+    author: 'Unlimited Now',
     authorAvatar: '/img/max.jpg',
     image: images[0],
   }
