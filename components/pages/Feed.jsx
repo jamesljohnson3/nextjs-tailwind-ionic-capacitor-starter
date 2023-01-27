@@ -98,12 +98,12 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.11_AM_f7flvc.png" />
             </IonThumbnail>
-            <a href='https://command.unlimitpotential.com/'>  <IonLabel>Launch App</IonLabel></a>
+            <a href='https://command.unlimitpotential.com/'>  <IonLabel>Start Challenge</IonLabel></a>
           </IonItem>
         </IonList>
       </IonCardContent>
     </IonCard>
-    <IonButton id="popover-button">Open Menu</IonButton>
+    <IonButton id="popover-button">Advanced Options</IonButton>
       <IonPopover trigger="popover-button" dismissOnSelect={true}>
         <IonContent>
           <IonList>
