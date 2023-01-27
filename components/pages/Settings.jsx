@@ -27,7 +27,7 @@ const Settings = () => {
       <IonContent>
         <IonList>
           <IonItem>
-            <IonLabel>Alerts</IonLabel>
+            <IonLabel>Receive Alerts</IonLabel>
             <IonToggle
               checked={settings.enableNotifications}
               onIonChange={e => {
@@ -39,7 +39,7 @@ const Settings = () => {
             />
           </IonItem>
           <IonItem>
-            <IonLabel>Lillie A.I.</IonLabel>
+            <IonLabel>Limit Spending</IonLabel>
             <IonToggle
               checked={settings.enableNotifications}
               onIonChange={e => {
@@ -51,7 +51,7 @@ const Settings = () => {
             />
           </IonItem>
           <IonItem>
-            <IonLabel>Enable Notifications</IonLabel>
+            <IonLabel>Lillie A.I. </IonLabel>
             <IonToggle
               checked={settings.enableNotifications}
               onIonChange={e => {
@@ -63,7 +63,7 @@ const Settings = () => {
             />
           </IonItem>
           <IonItem>
-            <IonLabel>Send/Receive Payments</IonLabel>
+            <IonLabel>Accept Payments</IonLabel>
             <IonToggle
               checked={settings.enableNotifications}
               onIonChange={e => {
