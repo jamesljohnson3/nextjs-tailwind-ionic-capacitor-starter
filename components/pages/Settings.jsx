@@ -13,6 +13,8 @@ import {
 import Store from '../../store';
 import * as selectors from '../../store/selectors';
 import { setSettings } from '../../store/actions';
+import { IonContent, IonFab, IonFabButton, IonFabList, IonHeader, IonIcon, IonTitle, IonToolbar } from '@ionic/react';
+import { chevronDownCircle, chevronForwardCircle, chevronUpCircle, colorPalette, document, globe } from 'ionicons/icons';
 
 const Settings = () => {
   const settings = Store.useState(selectors.getSettings);
@@ -75,6 +77,22 @@ const Settings = () => {
             />
           </IonItem>
         </IonList>
+        <IonFab slot="fixed" vertical="bottom" horizontal="end">
+          <IonFabButton>
+            <IonIcon icon={chevronUpCircle}></IonIcon>
+          </IonFabButton>
+          <IonFabList side="top">
+            <IonFabButton>
+              <IonIcon icon={document}></IonIcon>
+            </IonFabButton>
+            <IonFabButton>
+              <IonIcon icon={colorPalette}></IonIcon>
+            </IonFabButton>
+            <IonFabButton>
+              <IonIcon icon={globe}></IonIcon>
+            </IonFabButton>
+          </IonFabList>
+        </IonFab>
       </IonContent>
     </IonPage>
   );
