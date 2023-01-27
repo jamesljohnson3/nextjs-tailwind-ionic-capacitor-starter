@@ -1,5 +1,6 @@
 import Store from '../../store';
 import * as selectors from '../../store/selectors';
+import { IonButton, useIonAlert } from '@ionic/react';
 
 import {
   IonPage,
@@ -11,6 +12,10 @@ import {
   IonLabel,
   IonList,
 } from '@ionic/react';
+
+function Example() {
+  const [presentAlert] = useIonAlert();
+
 
 const ListEntry = ({ list, ...props }) => (
   <IonItem routerLink={`/tabs/lists/${list.id}`} className="list-entry">
@@ -30,6 +35,7 @@ const AllLists = ({ onSelect }) => {
   );
 };
 
+
 const Lists = () => {
   return (
     <IonPage>
@@ -46,10 +52,40 @@ const Lists = () => {
         </IonHeader>
         <IonList>
           <AllLists />
-        </IonList>
+        </IonList> <IonButton
+      onClick={() =>
+        presentAlert({
+          header: 'Please enter your info',
+          buttons: ['OK'],
+          inputs: [
+            {
+              placeholder: 'Name',
+            },
+            {
+              placeholder: 'Nickname (max 8 characters)',
+              attributes: {
+                maxlength: 8,
+              },
+            },
+            {
+              type: 'number',
+              placeholder: 'Age',
+              min: 1,
+              max: 100,
+            },
+            {
+              type: 'textarea',
+              placeholder: 'A little about yourself',
+            },
+          ],
+        })
+      }
+    >
+      Click Me
+    </IonButton>
       </IonContent>
     </IonPage>
   );
 };
-
+}
 export default Lists;
