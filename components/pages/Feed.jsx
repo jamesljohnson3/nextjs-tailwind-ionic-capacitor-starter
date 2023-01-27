@@ -70,7 +70,7 @@ const Feed = () => {
          <IonCard>
       <IonCardHeader>
         <IonCardTitle>Apps & Tools</IonCardTitle>
-        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        <IonCardSubtitle>Lillie A.I.</IonCardSubtitle>
       </IonCardHeader>
       <IonCardContent>
         <IonList>
