@@ -46,7 +46,7 @@ const Feed = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Feed</IonTitle>
+          <IonTitle>Dashboard</IonTitle>
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
