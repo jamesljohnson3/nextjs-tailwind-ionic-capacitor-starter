@@ -7,8 +7,8 @@ export const images = [
 export const homeItems = [
   {
     title: 'Receive Exclusive Rewards',
-    type: 'Create',
-    text: 'Distribute Ads',
+    type: 'Get started now!',
+    text: 'Subscribe',
     author: 'Unlimited Now',
     authorAvatar: '/img/logo.png',
     image: images[0],
