@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Card from '../ui/Card';
-
+import React, { useRef, useState } from 'react'
 import {
   IonPage,
   IonHeader,
@@ -13,11 +13,12 @@ import {
   IonMenuButton,
 } from '@ionic/react';
 import Notifications from './Notifications';
-import { useState } from 'react';
 import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
 import Store from '../../store';
 import { UserButton,  useUser} from "@clerk/clerk-react";
+import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
+import "@knocklabs/react-notification-feed/dist/index.css";
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
@@ -41,7 +42,9 @@ const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
 const Feed = () => {
   const homeItems = Store.useState(getHomeItems);
   const [showNotifications, setShowNotifications] = useState(false);
-
+  const notifButtonRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  
   return (
     <IonPage>
       <IonHeader>
@@ -49,11 +52,25 @@ const Feed = () => {
           <IonTitle>Feed</IonTitle>
           <IonButtons slot="start">
             <IonMenuButton />
-          </IonButtons> <UserButton /> 
+          </IonButtons>
           <IonButtons slot="end">
             <IonButton onClick={() => setShowNotifications(true)}>
               <IonIcon icon={notificationsOutline} />
-            </IonButton>
+            </IonButton> <UserButton /> <KnockFeedProvider
+          userId={primaryEmailAddress.toString()}
+          apiKey={process.env.NEXT_PUBLIC_KNOCK_PUBLIC_API_KEY}
+          feedId={process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID}
+        ><>
+        <NotificationIconButton
+          ref={notifButtonRef}
+          onClick={(e) => setIsVisible(!isVisible)}
+        />
+        <NotificationFeedPopover
+          buttonRef={notifButtonRef}
+          isVisible={isVisible}
+          onClose={() => setIsVisible(false)}
+        />
+      </></KnockFeedProvider>  
           </IonButtons>
         </IonToolbar>
       </IonHeader>
