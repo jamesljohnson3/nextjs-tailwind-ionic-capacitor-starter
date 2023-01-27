@@ -77,21 +77,21 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.05_AM_i7dtzd.png" />
             </IonThumbnail>
-            <a href='https://studio.unlimitpotential.com/'> <IonLabel>Switch Mod</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p> <a href='https://studio.unlimitpotential.com/'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
+            <a href='https://studio.unlimitpotential.com/'> <IonLabel>Switch Mod</IonLabel></a><br></br><p>- a small text description forre, nothing less.</p> <a href='https://studio.unlimitpotential.com/'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
           </IonItem>
 
           <IonItem>
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.20_AM_zltc7j.png" />
             </IonThumbnail>
-            <a href='https://connect.unlimitpotential.com/'>  <IonLabel>Recent Posts</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p> <a href='https://connect.unlimitpotential.com/'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
+            <a href='https://connect.unlimitpotential.com/'>  <IonLabel>Recent Posts</IonLabel></a><br></br><p>- a small text description for tnothing less.</p> <a href='https://connect.unlimitpotential.com/'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
           </IonItem>
 
           <IonItem>
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.31.57_AM_gnw5wi.png" />
             </IonThumbnail>
-            <a href='https://accounts.unlimitpotential.com/me'>  <IonLabel>Command Center</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p>   <a href='https://accounts.unlimitpotential.com/me'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
+            <a href='https://accounts.unlimitpotential.com/me'>  <IonLabel>Command Center</IonLabel></a><br></br><p>- a small more, nothing less.</p>   <a href='https://accounts.unlimitpotential.com/me'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
 
           </IonItem>
 
@@ -99,7 +99,7 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.11_AM_f7flvc.png" />
             </IonThumbnail>
-            <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>  <IonLabel>Begin Challenge</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p> <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
+            <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>  <IonLabel>Begin Challenge</IonLabel></a><br></br><p>- for the content. Nothing more, nothing less.</p> <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>     <IonButton expand="block" shape="round" fill="outline">Launch app</IonButton></a>
           </IonItem>
         </IonList>
       </IonCardContent>
