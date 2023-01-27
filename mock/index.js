@@ -12,25 +12,7 @@ export const homeItems = [
     author: 'Max Lynch',
     authorAvatar: '/img/max.jpg',
     image: images[0],
-  },
-  {
-    title: 'Arctic Adventures',
-    type: 'Sell',
-    text:
-      'Launch new site',
-    author: 'Max Lynch',
-    authorAvatar: '/img/max.jpg',
-    image: images[1],
-  },
-  {
-    title: 'Frolicking in the Faroe Islands',
-    type: 'Manage',
-    text:
-      'The Faroe Islands are a North Atlantic archipelago located 320 kilometres (200 mi) north-northwest of Scotland...',
-    author: 'Max Lynch',
-    authorAvatar: '/img/max.jpg',
-    image: images[2],
-  },
+  }
 ];
 
 export const notifications = [
