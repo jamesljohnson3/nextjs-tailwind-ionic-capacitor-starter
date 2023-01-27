@@ -77,14 +77,14 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.05_AM_i7dtzd.png" />
             </IonThumbnail>
-            <a href='https://studio.unlimitpotential.com/'> <IonLabel>Switch Mod</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://studio.unlimitpotential.com/'> <IonLabel>Switch Mod</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p> <a href='https://studio.unlimitpotential.com/'>     <IonButton fill="outline">Outline</IonButton></a>
           </IonItem>
 
           <IonItem>
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.20_AM_zltc7j.png" />
             </IonThumbnail>
-            <a href='https://connect.unlimitpotential.com/'>  <IonLabel>Recent Posts</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://connect.unlimitpotential.com/'>  <IonLabel>Recent Posts</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p> <a href='https://connect.unlimitpotential.com/'>     <IonButton fill="outline">Outline</IonButton></a>
           </IonItem>
 
           <IonItem>
