@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Student } from '../../types'
 import Cosmic from 'cosmicjs'
+import React from 'react'
 
 const api = Cosmic()
 
