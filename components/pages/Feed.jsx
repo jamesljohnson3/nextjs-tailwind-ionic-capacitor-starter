@@ -19,6 +19,7 @@ import Store from '../../store';
 import { UserButton,  useUser} from "@clerk/clerk-react";
 import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
 import "@knocklabs/react-notification-feed/dist/index.css";
+import Box from './cosmic';
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
@@ -69,7 +70,7 @@ const Feed = () => {
         {homeItems.map((i, index) => (
           <FeedCard {...i} key={index} />
         ))}
-      </IonContent>
+      </IonContent><Box/>
     </IonPage>
   );
 };
