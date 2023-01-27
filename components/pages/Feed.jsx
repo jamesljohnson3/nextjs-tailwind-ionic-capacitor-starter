@@ -91,7 +91,8 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.31.57_AM_gnw5wi.png" />
             </IonThumbnail>
-            <a href='https://accounts.unlimitpotential.com/me'>  <IonLabel>Command Center</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p>
+            <a href='https://accounts.unlimitpotential.com/me'>  <IonLabel>Command Center</IonLabel></a><br></br><p>- a small text description for the content. Nothing more, nothing less.</p>      <IonButton fill="outline">Outline</IonButton>
+
           </IonItem>
 
           <IonItem lines="none">
