@@ -7,7 +7,7 @@ export const images = [
 export const homeItems = [
   {
     title: 'Receive Exclusive Rewards',
-    type: 'Get started now!',
+    type: 'Get started for free',
     text: 'No card required!',
     author: 'Create Unlimited Now',
     authorAvatar: '/img/logo.png',
