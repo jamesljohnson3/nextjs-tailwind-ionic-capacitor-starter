@@ -72,6 +72,18 @@ const Settings = () => {
               }}
             />
           </IonItem>
+          <IonItem>
+            <IonLabel>Automatic Posting </IonLabel>
+            <IonToggle
+              checked={settings.enableNotifications}
+              onIonChange={e => {
+                setSettings({
+                  ...settings,
+                  enableNotifications: e.target.checked,
+                });
+              }}
+            />
+          </IonItem>
         </IonList>
         <IonFab slot="fixed" vertical="bottom" horizontal="end">
           <IonFabButton>
