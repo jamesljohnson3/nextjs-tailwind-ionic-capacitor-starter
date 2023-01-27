@@ -78,15 +78,15 @@ const Settings = () => {
             <IonIcon icon={chevronUpCircle}></IonIcon>
           </IonFabButton>
           <IonFabList side="top">
-            <IonFabButton>
+          <a href="https://connect.unlimitpotential.com/">  <IonFabButton>
               <IonIcon icon={document}></IonIcon>
-            </IonFabButton>
+            </IonFabButton></a> <a href="https://connect.unlimitpotential.com/billing">
             <IonFabButton>
               <IonIcon icon={colorPalette}></IonIcon>
-            </IonFabButton>
+            </IonFabButton></a> <a href="https://connect.unlimitpotential.com/feed">
             <IonFabButton>
               <IonIcon icon={globe}></IonIcon>
-            </IonFabButton>
+            </IonFabButton></a>
           </IonFabList>
         </IonFab>
       </IonContent>
