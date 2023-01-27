@@ -8,8 +8,8 @@ export const homeItems = [
   {
     title: 'Receive Exclusive Rewards',
     type: 'Get started now!',
-    text: 'Subscribe',
-    author: 'Unlimited Now',
+    text: 'No card required!',
+    author: 'Create Unlimited Now',
     authorAvatar: '/img/logo.png',
     image: images[0],
   }
