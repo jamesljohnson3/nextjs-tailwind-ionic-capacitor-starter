@@ -17,9 +17,6 @@ import { notificationsOutline } from 'ionicons/icons';
 import { getHomeItems } from '../../store/selectors';
 import Store from '../../store';
 import { UserButton,  useUser} from "@clerk/clerk-react";
-import { KnockFeedProvider, NotificationFeedPopover, NotificationIconButton } from "@knocklabs/react-notification-feed";
-import "@knocklabs/react-notification-feed/dist/index.css";
-import Box from './cosmic';
 
 const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
   <Card className="my-4 mx-auto">
@@ -69,7 +66,7 @@ const Feed = () => {
         <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
         {homeItems.map((i, index) => (
           <FeedCard {...i} key={index} href='https://unlimitpotential.com/my-profile'/>
-        ))}<Box/>
+        ))}
       </IonContent>
     </IonPage>
   );
