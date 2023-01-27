@@ -66,10 +66,10 @@ const Feed = () => {
        <IonGrid>
         <IonRow>
 
-        <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
+        <IonCol size="12" size-sm="3"> <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
         {homeItems.map((i, index) => (
           <FeedCard {...i} key={index}/>
-        ))}
+        ))}</IonCol><IonCol size="12" size-sm="3">
          <IonCard>
       <IonCardHeader>
         <IonCardTitle>Apps & Tools</IonCardTitle>
@@ -107,7 +107,7 @@ const Feed = () => {
           </IonItem>
         </IonList>
       </IonCardContent>
-    </IonCard>
+    </IonCard></IonCol>
     <IonButton id="popover-button">Advanced Options</IonButton>
       <IonPopover trigger="popover-button" dismissOnSelect={true}>
         <IonContent>
