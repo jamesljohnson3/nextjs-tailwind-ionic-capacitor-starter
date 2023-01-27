@@ -49,7 +49,7 @@ const Feed = () => {
           <IonTitle>Feed</IonTitle>
           <IonButtons slot="start">
             <IonMenuButton />
-          </IonButtons>
+          </IonButtons> <UserButton /> 
           <IonButtons slot="end">
             <IonButton onClick={() => setShowNotifications(true)}>
               <IonIcon icon={notificationsOutline} />
