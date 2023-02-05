@@ -103,7 +103,7 @@ const Feed = () => {
             <IonThumbnail slot="start">
               <img alt="Silhouette of mountains" src="https://res.cloudinary.com/unlimitednow/image/upload/v1673246648/Screen_Shot_2023-01-09_at_1.32.11_AM_f7flvc.png" />
             </IonThumbnail>
-     <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>     <IonButton expand="block" shape="round" fill="outline">Start Challenge </IonButton></a>
+     <a href='https://command.unlimitpotential.com/quiz/63cd86e62525650012f2ad66'>     <IonButton expand="block" shape="round" fill="outline">Do Challenge </IonButton></a>
           </IonItem>
         </IonList>
       </IonCardContent>
