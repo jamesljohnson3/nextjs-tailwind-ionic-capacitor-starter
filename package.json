@@ -16,7 +16,7 @@
     "@capacitor/core": "^4.0.0",
     "@capacitor/ios": "^4.0.0",
     "@capacitor/status-bar": "^4.0.0",
-    "@clerk/nextjs": "^2.0.0",
+    "@clerk/nextjs": "^4.0.0",
     "@ionic/react": "^6.2.9",
     "@ionic/react-router": "^6.2.9",
     "@knocklabs/react-notification-feed": "^0.6.1",
